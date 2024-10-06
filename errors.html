@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errors</title>
+</head>
+<body>
+
+    <script>
+
+        var a=10;
+        var a=15;
+        console.log(a); //15
+
+        let b=7;
+        let b=9;
+        console.log(b); //syntaxerror:'b' has already been declared
+
+        const c=24;
+        const c=80;
+        console.log(c); //syntaxerror:'c' has already been declared
+
+        var d=6;
+        let d=86;
+        console.log(d); //SyntaxError: Identifier 'd' has already been declared
+
+        var e=9;
+        const e=34;
+        console.log(e); //SyntaxError: Identifier 'e' has already been declared
+
+        let f=2;
+        var f=1;
+        console.log(f); //SyntaxError: Identifier 'f' has already been declared
+
+        let g=2;
+        const g=1;
+        console.log(g); //SyntaxError: Identifier 'g' has already been declared
+
+
+        const h=2;
+        var h=1;
+        console.log(h); //SyntaxError: Identifier 'h' has already been declared
+
+        const i=2;
+        let i=1;
+        console.log(i); //SyntaxError: Identifier 'i' has already been declared
+
+        var x=9;
+        x=8;
+        console.log(x); //8
+
+        let y=54;
+        y=67;
+        console.log(y);//67
+
+        const z=13;
+        z=1;
+        console.log(z);//TypeError: Assignment to constant variable.
+
+        var ab;
+        console.log(ab);//undefined
+
+        let bc;
+        console.log(bc);//undefined
+
+        const cd;
+        console.log(cd);//SyntaxError: Missing initializer in const declaration
+
+        xy;
+        console.log(xy); //ReferenceError: xy is not defined
+
+
+        xyz=1 0;
+        console.log(xyz);//SyntaxError: Unexpected number
+
+        st="YSVH"
+        console.log(st); //YSVH
+
+        str="YENUMULA SRI VENKATESH"
+        console.log(str);//YENUMULA SRI VENKATESH
+
+    </script>
+    
+</body>
+</html>
